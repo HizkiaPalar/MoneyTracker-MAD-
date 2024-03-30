@@ -1,6 +1,12 @@
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {PageHeader, Gap, TextInput, Button} from '../../components';
+import {
+  PageHeader,
+  Gap,
+  TextInput,
+  Button,
+} from '../../components';
+import Last3Transactions from '../../components/molecules/Transactions';
 
 const CashonBank = ({navigation}) => {
   return (
@@ -23,6 +29,7 @@ const CashonBank = ({navigation}) => {
         </View>
       </View>
       <Gap height={24} />
+      <Last3Transactions/>
     </ScrollView>
   );
 };
