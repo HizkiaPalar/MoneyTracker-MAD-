@@ -2,11 +2,11 @@ import {ScrollView, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {PageHeader, Gap, TextInput, Button} from '../../components';
 
-const CashonHand = ({navigation}) => {
+const CashonBank = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
       <PageHeader
-        label="Cash On Hand"
+        label="Cash On Bank"
         backButton={true}
         onPress={() => navigation.goBack()}
       />
@@ -27,7 +27,7 @@ const CashonHand = ({navigation}) => {
   );
 };
 
-export default CashonHand;
+export default CashonBank;
 
 const styles = StyleSheet.create({
   container: {
