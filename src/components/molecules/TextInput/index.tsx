@@ -5,7 +5,7 @@ const TextInput = ({label, placeholder}) => {
   return (
     <View>
       <Text style={styles.label}>{label}</Text>
-      <Input style={styles.input} placeholder={placeholder} />
+      <Input style={styles.textInput} placeholder={placeholder} />
     </View>
   );
 };
@@ -17,14 +17,16 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     fontSize: 16,
     color: '#020202',
+    marginBottom: 6,
   },
-  input: {
+  textInput: {
+    borderColor: '#020202',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingLeft: 10,
+    paddingVertical: 10,
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
     color: '#8D92A3',
-    borderWidth: 1,
-    borderColor: '#020202',
-    borderRadius: 8,
-    padding: 10,
   },
 });
